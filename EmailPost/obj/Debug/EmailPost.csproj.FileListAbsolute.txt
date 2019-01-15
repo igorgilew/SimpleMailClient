@@ -1,0 +1,9 @@
+C:\Практика\EmailPost\EmailPost\bin\Debug\EmailPost.exe.config
+C:\Практика\EmailPost\EmailPost\bin\Debug\EmailPost.exe
+C:\Практика\EmailPost\EmailPost\bin\Debug\EmailPost.pdb
+C:\Практика\EmailPost\EmailPost\obj\Debug\EmailPost.csprojResolveAssemblyReference.cache
+C:\Практика\EmailPost\EmailPost\obj\Debug\EmailPost.EmailPost.resources
+C:\Практика\EmailPost\EmailPost\obj\Debug\EmailPost.Properties.Resources.resources
+C:\Практика\EmailPost\EmailPost\obj\Debug\EmailPost.csproj.GenerateResource.Cache
+C:\Практика\EmailPost\EmailPost\obj\Debug\EmailPost.exe
+C:\Практика\EmailPost\EmailPost\obj\Debug\EmailPost.pdb
