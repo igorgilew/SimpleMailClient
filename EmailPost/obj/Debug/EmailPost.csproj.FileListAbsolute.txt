@@ -7,3 +7,8 @@ C:\Практика\EmailPost\EmailPost\obj\Debug\EmailPost.Properties.Resources
 C:\Практика\EmailPost\EmailPost\obj\Debug\EmailPost.csproj.GenerateResource.Cache
 C:\Практика\EmailPost\EmailPost\obj\Debug\EmailPost.exe
 C:\Практика\EmailPost\EmailPost\obj\Debug\EmailPost.pdb
+C:\Практика\EmailPost\EmailPost\bin\Debug\BouncyCastle.Crypto.dll
+C:\Практика\EmailPost\EmailPost\bin\Debug\MailKit.dll
+C:\Практика\EmailPost\EmailPost\bin\Debug\MimeKit.dll
+C:\Практика\EmailPost\EmailPost\bin\Debug\MailKit.xml
+C:\Практика\EmailPost\EmailPost\bin\Debug\MimeKit.xml

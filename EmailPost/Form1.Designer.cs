@@ -34,7 +34,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnSend = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.lbMail = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.wb = new System.Windows.Forms.WebBrowser();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,18 +94,49 @@
             this.splitContainer1.Location = new System.Drawing.Point(12, 12);
             this.splitContainer1.Name = "splitContainer1";
             // 
-            // splitContainer1.Panel1
+            // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(979, 416);
-            this.splitContainer1.SplitterDistance = 464;
+            this.splitContainer1.Panel2.Controls.Add(this.wb);
+            this.splitContainer1.Panel2.Controls.Add(this.lbMail);
+            this.splitContainer1.Size = new System.Drawing.Size(986, 422);
+            this.splitContainer1.SplitterDistance = 467;
             this.splitContainer1.TabIndex = 5;
+            // 
+            // lbMail
+            // 
+            this.lbMail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbMail.FormattingEnabled = true;
+            this.lbMail.Location = new System.Drawing.Point(0, 0);
+            this.lbMail.Name = "lbMail";
+            this.lbMail.Size = new System.Drawing.Size(513, 420);
+            this.lbMail.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::EmailPost.Properties.Resources.refresh;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Location = new System.Drawing.Point(1004, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(39, 35);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // wb
+            // 
+            this.wb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wb.Location = new System.Drawing.Point(0, 0);
+            this.wb.MinimumSize = new System.Drawing.Size(20, 20);
+            this.wb.Name = "wb";
+            this.wb.Size = new System.Drawing.Size(513, 420);
+            this.wb.TabIndex = 1;
             // 
             // EmailPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 440);
+            this.ClientSize = new System.Drawing.Size(1053, 457);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -110,6 +145,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "EmailPost";
             this.Text = "EmailPost";
+            this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -125,6 +161,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSend;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.ListBox lbMail;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.WebBrowser wb;
     }
 }
 

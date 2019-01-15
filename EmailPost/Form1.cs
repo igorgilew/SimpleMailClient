@@ -9,6 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Mail;
 using System.Net;
+using MailKit;
+using MailKit.Net.Imap;
+using MailKit.Search;
+using MimeKit;
+using System.IO;
 
 namespace EmailPost
 {
@@ -39,10 +44,48 @@ namespace EmailPost
         {
             SendMessageBySMTP();
         }
-
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        private void ReadHtmlFromMIME(MimeMessage message)
         {
+            var tmpDir = Path.Combine(Path.GetTempPath(), message.MessageId);
+            var visitor = new HtmlPreviewVisitor(tmpDir);
 
+            Directory.CreateDirectory(tmpDir);
+
+            message.Accept(visitor);
+            wb.DocumentText = "0";
+            wb.Document.OpenNew(true);
+            wb.Document.Write(visitor.HtmlBody);
+            wb.Refresh();           
+            
+        }
+        private void GetMail()
+        {
+            using (ImapClient client = new ImapClient())
+            {
+                //тут указывается почтовый сервер
+                client.Connect("imap.yandex.ru", 993, true);
+                //почта и пароль
+                client.Authenticate("yatiia@yandex.ru", "qwerty11");
+                IMailFolder inbox = client.Inbox;               
+                inbox.Open(FolderAccess.ReadOnly);
+                var uids = client.Inbox.Search(SearchQuery.All);
+
+                foreach (var uid in uids)
+                {
+                    var message = client.Inbox.GetMessage(uid);
+                    ReadHtmlFromMIME(message);
+                    // write the message to a file
+                    //message.WriteTo(string.Format("{0}.eml", uid));
+                }
+
+                client.Disconnect(true);
+               // MessageBox.Show(string.Format("Входящие {0}", inbox.Count)); 
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GetMail();
         }
     }
 }

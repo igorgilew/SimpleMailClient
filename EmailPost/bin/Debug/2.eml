@@ -1,0 +1,37 @@
+Received: from mxback10o.mail.yandex.net ([127.0.0.1])
+	by mxback10o.mail.yandex.net with LMTP id Jc07CMA6;
+	Tue, 15 Jan 2019 08:40:06 +0300
+Received: from mxback10o.mail.yandex.net (localhost.localdomain [127.0.0.1])
+	by mxback10o.mail.yandex.net (Yandex) with ESMTP id B201B3141054;
+	Tue, 15 Jan 2019 08:40:06 +0300 (MSK)
+X-Yandex-Internal: 1
+Received: from localhost (localhost [::1])
+	by mxback10o.mail.yandex.net (nwsmtp/Yandex) with ESMTP id 9K3WqBZZ2Y-e66SApFL;
+	Tue, 15 Jan 2019 08:40:06 +0300
+X-Yandex-Front: mxback10o.mail.yandex.net
+X-Yandex-TimeMark: 1547530806
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yandex.ru; s=mail; t=1547530806;
+	bh=yAd9qd1ph9uyNjjiySGvd0+7V952j0fMJzO85m8YOgE=;
+	h=From:To:Subject:Date:Message-Id;
+	b=mqsp/nTrrMrkOSDyihiRJ8kEj9DmpP9xjlYF6JH1r7PaduT57pZUren3mMDjz3bUH
+	 CoNmtg8fv0WGGAwbkKkIvF+o14LRh8wSBJn0HtH0hWGmFu5/dG5WSpDtWPKmOTLDsJ
+	 T5I11sI8KE21waGEjosnfzBbxW1mzBNDToc0GJVs=
+Authentication-Results: mxback10o.mail.yandex.net; dkim=pass header.i=@yandex.ru
+X-Yandex-Spam: 1
+X-Yandex-Sender-Uid: 185772861
+Received: by sas2-0106f63be698.qloud-c.yandex.net with HTTP;
+	Tue, 15 Jan 2019 08:40:06 +0300
+From: =?utf-8?B?0JjQs9C+0YDRjCDQk9C40LvQtdCy?= <ig.gilev2012@yandex.ru>
+Envelope-From: ig-gilev2012@yandex.ru
+To: "yatiia@yandex.ru" <yatiia@yandex.ru>
+Subject: =?utf-8?B?dGVzdCjQkdC10Lcg0YLQtdC80Ysp?=
+MIME-Version: 1.0
+X-Mailer: Yamail [ http://yandex.ru ] 5.0
+Date: Tue, 15 Jan 2019 10:40:06 +0500
+Message-Id: <10446141547530806@sas2-0106f63be698.qloud-c.yandex.net>
+Content-Transfer-Encoding: 7bit
+Content-Type: text/html
+Return-Path: ig.gilev2012@yandex.ru
+X-Yandex-Forward: d1bb3c6bd2c3048aa6a2e12eceefdd0b
+
+<div xmlns="http://www.w3.org/1999/xhtml">test message</div>
